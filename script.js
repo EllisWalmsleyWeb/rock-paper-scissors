@@ -42,13 +42,11 @@ function playRound(humanChoice, computerChoice, round) {
 function playGame(round = 1, humanScore = 0, computerScore = 0) {
   if (round > 5) {
     if (humanScore > computerScore) {
-      console.log(`Game Over! You win ${humanScore} to ${computerScore}!`);
+      console.log(`Game Over! You win ${humanScore} - ${computerScore}!`);
     } else if (computerScore > humanScore) {
-      console.log(`Game Over! You lose ${humanScore} to ${computerScore}.`);
+      console.log(`Game Over! You lose ${humanScore} - ${computerScore}.`);
     } else {
-      console.log(
-        `Game Over! It's a tie at ${humanScore} to ${computerScore}.`
-      );
+      console.log(`Game Over! It's a tie at ${humanScore} - ${computerScore}.`);
     }
     return;
   }
