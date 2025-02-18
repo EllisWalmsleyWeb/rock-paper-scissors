@@ -2,10 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="author" content="Ellis Walmsley" />
+    <meta name="description" content="A simple game of rock, paper, scissors" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header class="header">
+      <a href="https://github.com/EllisWalmsleyWeb"
+        >Ellis Walmsley<i class="bx bxl-github"></i
+      ></a>
+      <h1>Rock, Paper, Scissors</h1>
+    </header>
+
+    <div class="game-container">
+      <div class="results">
+        <button class="playBtn">Play</button>
+      </div>
+      <div class="selections">
+        <div class="player-selection">
+          <h2>Player</h2>
+          <h3>Make your choice</h3>
+          <div class="player-icons">
+            <button class="selection-btn" id="rock-btn">
+              <h1>✊</h1>
+            </button>
+            <button class="selection-btn" id="paper-btn">
+              <h1>✋</h1>
+            </button>
+            <button class="selection-btn" id="scissors-btn">
+              <h1>✌</h1>
+            </button>
+          </div>
+        </div>
+        <div class="computer-selection">
+          <h2>Alfred</h2>
+          <h3>Alfred is thinking...</h3>
+          <img src="assets/robot.gif" />
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

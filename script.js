@@ -65,5 +65,3 @@ function playGame(round = 1, humanScore = 0, computerScore = 0) {
 
 // Start the game
 playGame();
-
-// Branch test

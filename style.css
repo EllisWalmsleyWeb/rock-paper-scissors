@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-color: #070a13;
+  --secondary-color: #4d42d3;
+  --cta-color: #e21d48;
+  --cta-hover: #e46782;
+  --text-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+header a:hover {
+  color: var(--cta-color);
+}
+
+header i {
+  font-size: 2rem;
+}
+
+header h1 {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.game-container {
+  margin: 5vh;
+  padding: 3rem;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.results button {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  background-color: var(--cta-color);
+  color: var(--text-color);
+  border-radius: 10%;
+}
+
+.results button:hover {
+  background-color: var(--cta-hover);
+  border-color: #fff;
+}
+
+.selections {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+.player-selection,
+.computer-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  flex: 0 0 40vw;
+  height: 50vh;
+}
+
+.player-selection h2,
+.computer-selection h2 {
+  padding-bottom: 2rem;
+  font-weight: 800;
+}
+
+.player-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex: 1 1 0px;
+}
+
+.player-icons button {
+  background: var(--cta-color);
+  border-radius: 50%;
+}
+
+.player-icons button:hover {
+  background-color: var(--cta-hover);
+  border: solid var(--text-color);
+}
+
+#rock-btn,
+#paper-btn,
+#scissors-btn {
+  font-size: 3rem;
+}
