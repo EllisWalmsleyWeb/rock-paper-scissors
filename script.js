@@ -16,19 +16,19 @@ function playRound(humanChoice, computerChoice) {
     return {
       humanScore: 1,
       computerScore: 0,
-      message: `You win! ${humanChoice} beats ${computerChoice}.`,
+      message: `You win! ${humanChoice} beats ${computerChoice}`,
     };
   } else if (humanChoice === computerChoice) {
     return {
       humanScore: 0,
       computerScore: 0,
-      message: `It's a tie! You both chose ${computerChoice}.`,
+      message: `It's a tie! You both chose ${computerChoice}`,
     };
   } else {
     return {
       humanScore: 0,
       computerScore: 1,
-      message: `You lose! ${computerChoice} beats ${humanChoice}.`,
+      message: `You lose! ${computerChoice} beats ${humanChoice}`,
     };
   }
 }
@@ -43,6 +43,11 @@ function startGame() {
       <p id="game-status">Make your choice!</p>
     </div>
   `;
+
+  // Re-enable selection buttons
+  document.querySelectorAll(".selection-btn").forEach((button) => {
+    button.disabled = false;
+  });
 
   playGame();
 }
@@ -73,6 +78,11 @@ function playGame() {
               humanScore === 5 ? "You win!" : "You lose!"
             } Final Score: You ${humanScore} - ${computerScore} Alfred`
           );
+
+          // Disable the selection buttons after the game ends
+          document.querySelectorAll(".selection-btn").forEach((button) => {
+            button.disabled = true;
+          });
 
           if (!document.getElementById("play-again-btn")) {
             const playAgainBtn = document.createElement("button");
