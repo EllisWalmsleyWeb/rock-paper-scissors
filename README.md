@@ -9,7 +9,7 @@ A simple Rock Paper Scissors game built with HTML, CSS, and JavaScript. This pro
 - Responsive design for different screen sizes.
 
 ## Live Demo
-Check out the live demo: https://elliswalmsleyweb.github.io/rock-paper-scissors/
+Check out the live demo: [https://elliswalmsleyweb.github.io/rock-paper-scissors/]
 
 ## Installation
 To run this project locally:
@@ -40,7 +40,8 @@ To run this project locally:
 - Improve UI with additional styling.
 
 ## License
-This project is open-source and available under the [MIT License]((https://github.com/EllisWalmsleyWeb/rock-paper-scissors/blob/main/license)).
+This project is open-source and available under the [MIT License](LICENSE).
 
 ## Acknowledgments
 Built as part of [The Odin Project](https://www.theodinproject.com/) curriculum.
+
