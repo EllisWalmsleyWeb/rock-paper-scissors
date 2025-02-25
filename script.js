@@ -111,7 +111,6 @@ function resetGame() {
   }, 300);
 }
 
-// Update this portion of the playGame function
 function playGame() {
   let humanScore = 0;
   let computerScore = 0;
