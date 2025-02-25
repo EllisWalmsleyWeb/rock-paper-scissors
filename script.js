@@ -7,7 +7,14 @@ function updateGameStatus(message) {
   document.getElementById("game-status").textContent = message;
 }
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 function playRound(humanChoice, computerChoice) {
+  const humanChoiceCapitalized = capitalizeFirstLetter(humanChoice);
+  const computerChoiceCapitalized = capitalizeFirstLetter(computerChoice);
+
   if (
     (humanChoice === "rock" && computerChoice === "scissors") ||
     (humanChoice === "paper" && computerChoice === "rock") ||
@@ -16,19 +23,19 @@ function playRound(humanChoice, computerChoice) {
     return {
       humanScore: 1,
       computerScore: 0,
-      message: `You win! ${humanChoice} beats ${computerChoice}`,
+      message: `You win! ${humanChoiceCapitalized} beats ${computerChoiceCapitalized}`,
     };
   } else if (humanChoice === computerChoice) {
     return {
       humanScore: 0,
       computerScore: 0,
-      message: `It's a tie! You both chose ${computerChoice}`,
+      message: `It's a tie! You both chose ${computerChoiceCapitalized}`,
     };
   } else {
     return {
       humanScore: 0,
       computerScore: 1,
-      message: `You lose! ${computerChoice} beats ${humanChoice}`,
+      message: `You lose! ${computerChoiceCapitalized} beats ${humanChoiceCapitalized}`,
     };
   }
 }
