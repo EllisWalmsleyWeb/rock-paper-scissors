@@ -40,7 +40,7 @@ To run this project locally:
 - Improve UI with additional styling.
 
 ## License
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and available under the [MIT License]([LICENSE](https://github.com/EllisWalmsleyWeb/rock-paper-scissors/blob/main/license)).
 
 ## Acknowledgments
 Built as part of [The Odin Project](https://www.theodinproject.com/) curriculum.
