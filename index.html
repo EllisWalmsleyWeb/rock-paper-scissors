@@ -6,23 +6,18 @@
     <meta name="description" content="A simple game of rock, paper, scissors" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, Paper, Scissors</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <a href="https://github.com/EllisWalmsleyWeb/rock-paper-scissors"
-        >Ellis Walmsley<i class="bx bxl-github"></i
-      ></a>
       <h1>Rock, Paper, Scissors</h1>
     </header>
 
     <div class="game-container">
       <div class="results">
-        <button class="playBtn">Play</button>
+        <button class="playBtn" id="start-game">Play</button>
       </div>
       <div class="selections">
         <div class="player-selection">
@@ -43,11 +38,13 @@
         <div class="computer-selection">
           <h2>Alfred</h2>
           <h3>Alfred is thinking...</h3>
-          <img src="assets/robot.gif" />
+          <img src="assets/robot.gif" alt="Robot" />
         </div>
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <footer>
+      <a href="https://github.com/EllisWalmsleyWeb/rock-paper-scissors">Ellis Walmsley<i class="bx bxl-github"></i></a>
+    </footer>
   </body>
 </html>
