@@ -9,7 +9,7 @@ A simple Rock Paper Scissors game built with HTML, CSS, and JavaScript. This pro
 - Responsive design for different screen sizes.
 
 ## Live Demo
-Check out the live demo: [(https://elliswalmsleyweb.github.io/rock-paper-scissors/)]
+Check out the live demo: [https://elliswalmsleyweb.github.io/rock-paper-scissors/]
 
 ## Installation
 To run this project locally:
